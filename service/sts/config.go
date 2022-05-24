@@ -65,9 +65,9 @@ func (p *STS) GetAPIInfo(api string) *base.ApiInfo {
 	return nil
 }
 
-// SetHost .
+// SetRegion .
 func (p *STS) SetRegion(region string) {
-	ServiceInfo.Credentials.Region = region
+	p.Client.ServiceInfo.Credentials.Region = region
 }
 
 // SetHost .
